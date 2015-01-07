@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question><![CDATA[> Which potentiostat was used for the concerned H<sub>2</sub>O<sub>2</sub> experiment]]></question>
+    <answer>PINE potentiostat</answer>
+    <answer correct="yes">DROPSENS</answer>
+    <answer>AUTOLAB</answer>
+    <answer>CH Potentiostat</answer>
+  </mchoice>
+  <mchoice>
+    <question>What is the role of Prussian blue</question>
+    <answer correct="yes"><![CDATA[> Reduction of H<sub>2</sub>O<sub>2</sub> ]]></answer>
+    <answer><![CDATA[> Oxidation of H<sub>2</sub>O<sub>2</sub>]]></answer>
+    <answer><![CDATA[> Dehydrogenation of H<sub>2</sub>O<sub>2</sub>]]></answer>
+    <answer><![CDATA[>Hydrogenation of H<sub>2</sub>O<sub>2</sub>]]></answer>
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[ >When the electrolyte was changed from 0.1M K<sub>2</sub>HPO<sub>4</sub> / KH<sub>2</sub>PO<sub>4</sub> + 0.1 M KCl to 0.1 M KCl +0.1M HCl, what was the effect on the current value]]></question>
+   <answer correct="yes">Current value increased</answer>
+    <answer>Decreased</answer>
+    <answer>Remained constant</answer>
+    <answer>Decreased and then constant</answer>
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[>With the increasing conc of H<sub>2</sub>O<sub>2</sub>, what was the effect on the current values]]></question>
+    <answer>Decreased</answer>
+    <answer correct="yes">Increased</answer>
+    <answer>Remained constant</answer>
+    <answer>Decreased and then become constant</answer>
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[>What was the potential range for H<sub>2</sub>O<sub>2</sub> detection]]></question>
+    <answer>-0.1 V to 0.4 V</answer>
+    <answer>-0.4 V to -0.8 V</answer>
+    <answer correct="yes">-0.4 V to 0.8 V</answer>
+    <answer>8.0 V to 4.0 V</answer>
+  </mchoice> 
+</quiz>

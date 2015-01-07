@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question>In an electrolytic cell the electrode at which the electrons enter the solution is called the ______; the chemical change that occurs at this electrode is called _______.</question>
+    <answer>Anode, oxidation </answer>
+    <answer>Anode, reduction </answer>
+    <answer>Cathode, oxidation </answer>
+    <answer correct="yes">Cathode, reduction </answer>
+    <answer>tell unless we know the species being oxidized and reduced.</answer>
+  </mchoice>
+  <mchoice>
+    <question>Which of the following statements is FALSE? </question>
+    <answer>Oxidation and reduction half-reactions occur at electrodes in electrochemical cells.</answer>
+    <answer>All electrochemical reactions involve the transfer of electrons.</answer>
+    <answer>Reduction occurs at the cathode.</answer>
+    <answer>Oxidation occurs at the anode.</answer>
+    <answer correct="yes">All voltaic (galvanic) cells involve the use of electricity to initiate nonspontaneous chemical reactions.</answer>
+  </mchoice>
+  <mchoice>
+    <question>How many faradays are required to reduce 1.00 g of aluminum (III) to the aluminum metal? </question>
+    <answer>1.00</answer>
+    <answer>1.50</answer>
+    <answer>3.00</answer>
+    <answer>0.111</answer>
+    <answer correct="yes">0.250</answer>
+  </mchoice>
+  <mchoice>
+    <question>In the standard notation for a voltaic cell, the double vertical line "||" represents: </question>
+    <answer>a phase boundary</answer>
+    <answer>gas electrode</answer>
+    <answer>a wire (metal) connection</answer>
+    <answer>a salt bridge</answer>
+    <answer correct="yes">a standard hydrogen electrode</answer>
+  </mchoice>
+  <mchoice>
+    <question>Faraday’s laws of electrolysis are related to the</question>
+    <answer>atomic number of the cation.</answer>
+    <answer>atomic number of the anion.</answer>
+    <answer correct="yes">equivalent weight of the electrolyte</answer>
+    <answer>speed of the cation</answer>
+  </mchoice>
+</quiz>

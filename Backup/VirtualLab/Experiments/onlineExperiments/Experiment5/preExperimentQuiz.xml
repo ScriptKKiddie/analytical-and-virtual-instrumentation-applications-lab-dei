@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question>What is the electrical resistivity (mΩ) of boron doped diamond electrode?</question>
+    <answer correct="yes">0.75</answer>
+    <answer>1.2</answer>
+    <answer>1.3</answer>
+    <answer>0.3</answer>    
+  </mchoice>
+  <mchoice>
+    <question>What is the band gap (eV) of diamond?</question>
+    <answer correct="yes">5.4</answer>
+    <answer>2.3</answer>
+    <answer>7.8</answer>
+    <answer>3.2</answer>    
+  </mchoice>
+  <mchoice>
+    <question>What is the effect of boron doping of diamond electrodes?</question>
+    <answer>Band gap increases </answer>
+    <answer correct="yes">Band gap decreases</answer>
+    <answer>None of the above </answer>
+    <answer>All of the these</answer>    
+  </mchoice>
+  <mchoice>
+    <question>Which type of conductivity does boron doped diamond electrode shows?</question>
+    <answer correct="yes">p-type</answer>
+    <answer>n-type </answer>
+    <answer>None of the above </answer>
+    <answer>Both a and b</answer>    
+  </mchoice>
+  <mchoice>
+    <question>Which is the most sensitive technique among the following?</question>
+    <answer>Cyclic voltammetry</answer>
+    <answer correct="yes">Square wave voltammetry </answer>
+    <answer>Linear sweep voltammetry</answer>
+    <answer>Differential pulse voltammetry</answer>
+  </mchoice>
+</quiz>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question>Which software is used for the concerned above experiment</question>
+    <answer>NOVA</answer>
+    <answer correct="yes">GPES</answer>
+    <answer>AFTERMATH</answer>
+    <answer>DROPVIEW</answer>
+  </mchoice>
+  <mchoice>
+    <question>Which is used as supporting electrolyte</question>
+    <answer>KCl</answer>
+    <answer correct="yes"><![CDATA[> KNO<sub>3</sub>]]></answer>
+    <answer><![CDATA[> H<sub>2</sub>O]]></answer>
+    <answer>Acetate Buffer pH 9.0</answer>
+  </mchoice>
+  <mchoice>
+    <question>In this experiment, counter electrode is of</question>
+   <answer correct="yes">Carbon</answer>
+    <answer>Platinum</answer>
+    <answer>Ag/AgCl</answer>
+    <answer>Gold(Au)</answer>
+  </mchoice>
+  <mchoice>
+    <question>During the experiment, nitrogen is used for</question>
+    <answer>Digestion of organic matter </answer>
+    <answer correct="yes">Oxygen Purging</answer>
+    <answer>Crystallization</answer>
+    <answer>Condensation</answer>
+  </mchoice>
+  <mchoice>
+    <question>Which metal salts were used</question>
+    <answer correct="yes">Nitrate</answer>
+    <answer>Oxide</answer>
+    <answer>Sulphate</answer>
+    <answer>Chloride</answer>
+  </mchoice> 
+</quiz>

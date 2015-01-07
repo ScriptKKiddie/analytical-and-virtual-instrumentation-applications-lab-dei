@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question>Disadvantage of the use of mercury electrode is</question>
+    <answer correct="yes">Limited anodic range and toxicity</answer>
+    <answer>Accuracy</answer>
+    <answer>Sensitivity</answer>
+    <answer>Reproducibility</answer>    
+  </mchoice>
+  <mchoice>
+    <question>In ASV, which step comes after deposition step </question>
+    <answer>Purging</answer>
+    <answer correct="yes">Potential Scanning</answer>
+    <answer>Pre-Concentration</answer>
+    <answer>Stirring</answer>    
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[> If the standard EMF of the following cell is +0.91V, what is the standard potential of Zn/Zn<sup>2+</sup> electrode <br /> Zn (s) │Zn<sup>2+</sup> (aq) ││H<sup>+</sup>, H<sub>2</sub> (aq) │Pt (s)]]></question>
+    <answer>0.91 V</answer>
+    <answer correct="yes">-0.91 V</answer>
+    <answer>0.09 V</answer>
+    <answer>-0.09 V</answer>    
+  </mchoice>
+  <mchoice>
+    <question>What is the reduction potential for cadmium</question>
+    <answer>-0.1 V</answer>
+    <answer>-0.2 V</answer>
+    <answer>-0.4 V</answer>
+    <answer correct="yes">-0.6 V</answer>    
+  </mchoice>
+  <mchoice>
+    <question>5.	The electric charge or electrode deposition of one gram equivalent of a substance is:</question>
+    <answer>one ampere for one second</answer>
+    <answer>96,500 coulombs per second</answer>
+    <answer>one ampere for one hour</answer>
+    <answer correct="yes">charge on one mole of electrons</answer>
+  </mchoice>
+</quiz>

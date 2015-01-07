@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question>Which electrode is used for the following experiment</question>
+    <answer correct="yes">Prussian blue screen printed electrode</answer>
+    <answer>Ferrocyanide screen printed electrode</answer>
+    <answer>Co-Pthalocyanide screen printed electrode</answer>
+    <answer>CNT-SPE</answer>
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[>H<sub>2</sub>O<sub>2</sub> forms OH radical in the presence of]]></question>
+    <answer correct="yes">Fe – Cu</answer>
+    <answer>Mg - G</answer>
+    <answer><![CDATA[  Br<sub>2</sub> - Cl<sub>2</sub>]]></answer>
+    <answer>P - S</answer>
+  </mchoice>
+  <mchoice>
+    <question>What is the chemical formula of prussion blue</question>
+    <answer><![CDATA[ Fe[Fe<sub>3</sub>(CN)<sub>6</sub>]<sub>3</sub>.n H<sub>2</sub>O]]></answer>
+    <answer correct="yes"><![CDATA[ Fe<sub>4</sub>[Fe(CN)<sub>6</sub>]<sub>3</sub>.n H<sub>2</sub>O]]></answer>
+    <answer><![CDATA[ Fe[Fe(CN)<sub>6</sub>].n H<sub>2</sub>O]]></answer>
+    <answer><![CDATA[ [Fe<sub>4</sub>(CN)<sub>6</sub>]<sub>3</sub>]]></answer>
+  </mchoice>
+  <mchoice>
+    <question>Which is the oxidized form of Prussian blue </question>
+    <answer correct="yes">Prussian green</answer>
+    <answer>Prussian White</answer>
+    <answer>Ferricyanide</answer>
+    <answer>Ferrocyanide</answer>
+  </mchoice>
+  <mchoice>
+    <question>What is the full form of POSCO</question>
+    <answer>Provisional</answer>
+    <answer correct="yes">Poyang</answer>
+    <answer>Payrol</answer>
+    <answer>Payment</answer>
+  </mchoice>
+</quiz>

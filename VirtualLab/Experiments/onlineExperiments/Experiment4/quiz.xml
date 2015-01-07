@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question><![CDATA[ >What are the two oxidation states of nitrogen in the compound NH<sub>4</sub>NO<sub>3</sub>]]></question>
+    <answer>-3 and -5</answer>
+    <answer correct="yes">-3 and +5</answer>
+    <answer>+3 and -5</answer>
+    <answer>+3 and +5</answer>
+  </mchoice>
+  <mchoice>
+    <question>Which combination of factors leads to a better oxidizing agent?</question>
+    <answer>low ionization energy, high electronegativity, small radius</answer>
+    <answer correct="yes">high ionization energy, high electronegativity, small radius</answer>
+    <answer>low ionization energy, low electronegativity, small radius</answer>
+    <answer>low ionization energy, high electronegativity, small radius</answer>
+  </mchoice>
+  <mchoice>
+    <question>What occurs when an atom is oxidized in a chemical reaction?</question>
+    <answer>a loss of electrons and a decrease in oxidation number</answer>
+    <answer correct="yes">a loss of electrons and an increase in oxidation number</answer>
+    <answer>a gain of electrons and a decrease in oxidation number</answer>
+    <answer>a gain of electrons and an increase in oxidation number</answer>
+  </mchoice>
+  <mchoice>
+    <question>Which metal is used as a coating on steel to limit corrosion?</question>
+    <answer>Na</answer>
+    <answer>Ca</answer>
+    <answer>K</answer>
+    <answer correct="yes">Zn</answer>
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[ >What is indicated when a chemical cell's voltage (E<sup>o</sup>) has dropped to zero?]]></question>
+    <answer>The concentration of the reactants has increased.</answer>
+    <answer>The concentration of the products has decreased.</answer>
+    <answer correct="yes">The cell reaction has reached equilibrium.</answer>
+    <answer>The cell reaction has completely stopped.</answer>
+  </mchoice>
+  <mchoice>
+    <question>Electrolytic cells are</question>
+    <answer>non-spontaneous changes, with a negative anode and a positive cathode</answer>
+    <answer correct="yes">non-spontaneous changes, with a positive anode and a negative cathode</answer>
+    <answer>spontaneous changes, with a negative anode and a positive cathode</answer>
+    <answer>spontaneous changes, with a positive anode and a negative cathode</answer>
+  </mchoice>
+  <mchoice>
+    <question>In an electrolytic cell, the negative electrode is called the</question>
+    <answer>anode, at which oxidation occurs</answer>
+    <answer>anode, at which reduction occurs</answer>
+    <answer>cathode, at which oxidation occurs</answer>
+    <answer correct="yes">cathode, at which reduction occurs </answer>
+  </mchoice>
+  <mchoice>
+    <question>In an electrolytic cell</question>
+    <answer>the cathode is positive, its mass increases; the anode is negative, its mass decreases</answer>
+    <answer>the cathode is positive, its mass decreases; the anode is negative, its mass increases</answer>
+    <answer correct="yes">the cathode is negative, its mass increases; the anode is positive, its mass decreases</answer>
+    <answer>the cathode is negative, its mass decreases; the anode is positive, its mass increases</answer>
+  </mchoice>
+  <mchoice>
+    <question>In an electrochemical cell, what is the purpose of the salt bridge?</question>
+    <answer>It is the anode.</answer>
+    <answer>It is the cathode.</answer>
+    <answer correct="yes">It permits the migration of ions between the half-cells.</answer>
+    <answer>It permits the mixing of solutions between the half-cells.</answer>
+  </mchoice>
+  <mchoice>
+    <question>Electrochemical cells are</question>
+    <answer>non-spontaneous changes, with a negative anode and a positive cathode</answer>
+    <answer>non-spontaneous changes, with a positive anode and a negative cathode</answer>
+    <answer correct="yes">spontaneous changes, with a negative anode and a positive cathode</answer>
+    <answer>spontaneous changes, with a positive anode and a negative cathode</answer>
+  </mchoice>
+  <mchoice>
+    <question>A redox reaction always demonstrates the conservation of</question>
+    <answer>mass, only</answer>
+    <answer>charge, only</answer>
+    <answer correct="yes">both mass and charge</answer>
+    <answer>neither mass nor charge </answer>
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[ >What is the oxidation number of nitrogen in N<sub>2</sub>?]]></question>
+    <answer>+1</answer>
+    <answer correct="yes">0</answer>
+    <answer>+3</answer>
+    <answer>-3</answer>
+  </mchoice>
+</quiz>

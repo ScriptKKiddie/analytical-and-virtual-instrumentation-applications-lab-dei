@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C93A4218-7D3F-4F5E-B2D9-965CB7A7DADD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtualLab</RootNamespace>
+    <AssemblyName>VirtualLab</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AVAILLab\AVAILLab\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Telerik.Web.UI, Version=2009.3.1208.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AVAILLab\AVAILLab\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="count.xml" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\glowtabs.css" />
+    <Content Include="css\main.css" />
+    <Content Include="ddtabmenufiles\ddtabmenu.js" />
+    <Content Include="ddtabmenufiles\glowtabs.css" />
+    <Content Include="ddtabmenufiles\media\blockactive.gif" />
+    <Content Include="ddtabmenufiles\media\blockdefault.gif" />
+    <Content Include="ddtabmenufiles\media\chromebg.gif" />
+    <Content Include="ddtabmenufiles\media\chromebg2.gif" />
+    <Content Include="ddtabmenufiles\media\color_tabs_left.gif" />
+    <Content Include="ddtabmenufiles\media\color_tabs_right.gif" />
+    <Content Include="ddtabmenufiles\media\glowtab-left.gif" />
+    <Content Include="ddtabmenufiles\media\glowtab.gif" />
+    <Content Include="Default.aspx" />
+    <Content Include="Download\sendDownloads.htm" />
+    <Content Include="Experiments\experiments.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\animate.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\DataAnalysis.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\analysis.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\arrow.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\electrode system.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\Graph.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\oxidation.JPG" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\reduction.JPG" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\introduction.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\livecam.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\perform.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\preExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\procedure.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\sample.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\setup.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\video.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\animate.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\DataAnalysis.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\arrow.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\DataAnalysisGraph1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\DataAnalysisGraph2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\procedure.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\scientist.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\setup.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step1a.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step1b.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step4.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step5.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step6.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\step7.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Images\theoryGraph.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\introduction.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\livecam.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\perform.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\postExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\preExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\procedure.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\Quiz.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\sample.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\setup.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment2\video.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\animate.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\DataAnalysis.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\DA_Graph1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\DA_Graph2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\DA_Graph3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\Electrode.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\intro.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\potentiostate.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\Procedure.JPG" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\Step1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\step10.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\Step2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\Step3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\step4.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\step5.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\step6.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\step7.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\step8.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\images\step9.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\introduction.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\livecam.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\perform.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\postExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\preExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\procedure.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\Quiz.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\sample.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\setup.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment3\video.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\animate.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\DataAnalysis.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\DA_Graph1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\DA_Graph2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\Electrode.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\intro.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\pineelectrode.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\pinepotentiostate.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\potentiostate.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\Step1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\Step2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\Step3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\step4a.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\step4b.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\step5a.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\step5b.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\step6a.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\step6b.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\images\step7a.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\introduction.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\livecam.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\perform.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\procedure.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\Quiz.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\quiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\sample.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\setup.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment4\video.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\animate.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\DataAnalysis.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\DA_Graph1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\DA_Graph2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\DA_Graph3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\DA_Graph4.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\DA_Graph5.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\Electrode.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\potentiostate.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\Step1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\step2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\step3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\Step4.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\Step5.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Images\Step6.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\introduction.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\livecam.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\perform.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\postExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\preExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\procedure.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\Quiz.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\sample.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\setup.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment5\video.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\DataAnalysis.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\arrow.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\setup.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\Step1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\Step2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\step3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\step4.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\step5.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\images\step6.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\introduction.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\livecam.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\perform.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\postExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\preExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\procedure.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\Quiz.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\sample.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\setup.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment6\video.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\DataAnalysis.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\introduction.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\livecam.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\perform.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\postExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\preExperimentQuiz.xml" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\procedure.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\Quiz.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\sample.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\setup.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment7\video.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\dropsens.jpg" />
+    <Content Include="Images\Metrohm_Autolab_Potentiostats_Galvanostats_302Nangle.jpg" />
+    <Content Include="Images\Mux.PNG" />
+    <Content Include="Images\quiz.png" />
+    <Content Include="Images\sample.png" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\setup.JPG" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\Step1.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\Step2.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\Step3.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\step4.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Images\step5.jpg" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\Quiz.aspx" />
+    <Content Include="Experiments\onlineExperiments\Experiment1\postExperimentQuiz.xml" />
+    <Content Include="Experiments\SimulationData\Colorimeter\Colorimeter.htm" />
+    <Content Include="Experiments\SimulationData\Colorimeter\Inodrop.gif" />
+    <Content Include="Experiments\SimulationData\CV\cv.htm" />
+    <Content Include="Experiments\SimulationData\CV\cvs.swf" />
+    <Content Include="Experiments\SimulationData\Images\beersLaw.gif" />
+    <Content Include="Experiments\SimulationData\Images\CVGraph.JPG" />
+    <Content Include="Experiments\SimulationData\Images\polograph.jpg" />
+    <Content Include="Experiments\SimulationData\Polarography\polorography.html" />
+    <Content Include="Experiments\SimulationData\Polarography\polorography.swf" />
+    <Content Include="feedback\feedback.aspx" />
+    <Content Include="feedback\thanks.aspx" />
+    <Content Include="icon.gif" />
+    <Content Include="Images\assignment.jpg" />
+    <Content Include="Images\books.jpg" />
+    <Content Include="Images\content_bg.jpg" />
+    <Content Include="Images\eval.jpg" />
+    <Content Include="Images\feedback.jpg" />
+    <Content Include="Images\footer-curve.jpg" />
+    <Content Include="Images\header-blue.gif" />
+    <Content Include="Images\header_01.jpg" />
+    <Content Include="Images\header_03.jpg" />
+    <Content Include="Images\Icon_simulator.jpg" />
+    <Content Include="Images\Icon_theory.jpg" />
+    <Content Include="Images\img01.gif" />
+    <Content Include="Images\img02.jpg" />
+    <Content Include="Images\img03.gif" />
+    <Content Include="Images\img04.jpg" />
+    <Content Include="Images\img05.jpg" />
+    <Content Include="Images\img06.jpg" />
+    <Content Include="Images\img08.jpg" />
+    <Content Include="Images\img082.jpg" />
+    <Content Include="Images\img09.jpg" />
+    <Content Include="Images\img092.jpg" />
+    <Content Include="Images\img10.jpg" />
+    <Content Include="Images\img102.jpg" />
+    <Content Include="Images\img11.gif" />
+    <Content Include="Images\index_05.jpg" />
+    <Content Include="Images\liveCam.png" />
+    <Content Include="Images\Logo.gif" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\navshadow.gif" />
+    <Content Include="Images\procedure.jpg" />
+    <Content Include="Images\setup.jpg" />
+    <Content Include="Images\setup.png" />
+    <Content Include="Images\setup1.jpg" />
+    <Content Include="Images\sim.jpg" />
+    <Content Include="Images\theory.jpg" />
+    <Content Include="Images\uAUT_FRA2.jpg" />
+    <Content Include="Images\video.jpg" />
+    <Content Include="Images\wavenow_001.jpg" />
+    <Content Include="js\allScripts.js" />
+    <Content Include="js\ddtabmenu.js" />
+    <Content Include="loginschedule\forgotPassword.aspx" />
+    <Content Include="loginschedule\login.aspx" />
+    <Content Include="loginschedule\Register.aspx" />
+    <Content Include="loginschedule\Schedule.aspx" />
+    <Content Include="others\ContactUs.aspx" />
+    <Content Include="others\equipments.aspx" />
+    <Content Include="others\faqs.aspx" />
+    <Content Include="others\livecam.aspx" />
+    <Content Include="others\people.aspx" />
+    <Content Include="registration.aspx" />
+    <Content Include="Simulations\dropsens.swf" />
+    <Content Include="Simulations\Nova.swf" />
+    <Content Include="Simulations\SWV.swf" />
+    <Content Include="style.css" />
+    <Content Include="style2.css" />
+    <Content Include="thanks.aspx" />
+    <Content Include="UnderConstruction.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\experiments.aspx.cs">
+      <DependentUpon>experiments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\experiments.aspx.designer.cs">
+      <DependentUpon>experiments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\animate.aspx.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\animate.aspx.designer.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\perform.aspx.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\perform.aspx.designer.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\procedure.aspx.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\procedure.aspx.designer.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\sample.aspx.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\sample.aspx.designer.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment1\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\animate.aspx.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\animate.aspx.designer.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\perform.aspx.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\perform.aspx.designer.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\procedure.aspx.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\procedure.aspx.designer.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\sample.aspx.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\sample.aspx.designer.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment2\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\animate.aspx.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\animate.aspx.designer.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\perform.aspx.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\perform.aspx.designer.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\procedure.aspx.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\procedure.aspx.designer.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\sample.aspx.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\sample.aspx.designer.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment3\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\animate.aspx.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\animate.aspx.designer.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\perform.aspx.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\perform.aspx.designer.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\procedure.aspx.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\procedure.aspx.designer.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\sample.aspx.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\sample.aspx.designer.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment4\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\animate.aspx.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\animate.aspx.designer.cs">
+      <DependentUpon>animate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\perform.aspx.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\perform.aspx.designer.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\procedure.aspx.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\procedure.aspx.designer.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\sample.aspx.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\sample.aspx.designer.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment5\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\perform.aspx.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\perform.aspx.designer.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\procedure.aspx.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\procedure.aspx.designer.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\sample.aspx.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\sample.aspx.designer.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment6\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\perform.aspx.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\perform.aspx.designer.cs">
+      <DependentUpon>perform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\procedure.aspx.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\procedure.aspx.designer.cs">
+      <DependentUpon>procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\sample.aspx.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\sample.aspx.designer.cs">
+      <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\setup.aspx.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\setup.aspx.designer.cs">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Experiments\onlineExperiments\Experiment7\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback\feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback\feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback\thanks.aspx.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback\thanks.aspx.designer.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="loginschedule\forgotPassword.aspx.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginschedule\forgotPassword.aspx.designer.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginschedule\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginschedule\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginschedule\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginschedule\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginschedule\Schedule.aspx.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginschedule\Schedule.aspx.designer.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="others\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="others\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="others\equipments.aspx.cs">
+      <DependentUpon>equipments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="others\equipments.aspx.designer.cs">
+      <DependentUpon>equipments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="others\faqs.aspx.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="others\faqs.aspx.designer.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="others\livecam.aspx.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="others\livecam.aspx.designer.cs">
+      <DependentUpon>livecam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="others\people.aspx.cs">
+      <DependentUpon>people.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="others\people.aspx.designer.cs">
+      <DependentUpon>people.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thanks.aspx.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thanks.aspx.designer.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnderConstruction.aspx.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnderConstruction.aspx.designer.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ddtabmenufiles\glowtabs.css~" />
+    <None Include="Experiments\onlineExperiments\Experiment1\Nova.zip" />
+    <None Include="Experiments\onlineExperiments\Experiment1\quiz.xsd" />
+    <None Include="Experiments\onlineExperiments\Experiment2\Nova.zip" />
+    <None Include="Experiments\onlineExperiments\Experiment2\quiz.xsd" />
+    <None Include="Experiments\onlineExperiments\Experiment3\DropView.zip" />
+    <None Include="Experiments\onlineExperiments\Experiment3\quiz.xsd" />
+    <None Include="Experiments\onlineExperiments\Experiment4\aftermath.zip" />
+    <None Include="Experiments\onlineExperiments\Experiment4\quiz.xsd" />
+    <None Include="Experiments\onlineExperiments\Experiment5\DropView.zip" />
+    <None Include="Experiments\onlineExperiments\Experiment5\quiz.xsd" />
+    <None Include="Experiments\onlineExperiments\Experiment5\ve-DB1F.tmp" />
+    <None Include="Experiments\onlineExperiments\Experiment6\Nova.zip" />
+    <None Include="Experiments\onlineExperiments\Experiment6\quiz.xsd" />
+    <None Include="Experiments\SimulationData\Colorimeter\Demo1.class" />
+    <None Include="Experiments\SimulationData\Colorimeter\Filling.class" />
+    <None Include="Experiments\SimulationData\Colorimeter\Graph.class" />
+    <None Include="Experiments\SimulationData\Colorimeter\LED.class" />
+    <None Include="Experiments\SimulationData\Colorimeter\Lines.class" />
+    <None Include="Experiments\SimulationData\Colorimeter\Title.class" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="registration\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51241</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
