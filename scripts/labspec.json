@@ -21,13 +21,13 @@
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "jawahar@iiit.ac.in", 
+                        "email": "", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Jawahar C.V", 
+                    "institute": "Dayalbagh Educational Institute", 
+                    "name": "", 
                     "organization": "", 
                     "role": "Lab Developer", 
                     "title": "", 
@@ -36,13 +36,13 @@
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "phani@iiit.ac.in", 
+                        "email": "", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Phani Phani", 
+                    "institute": "Dayalbagh Educational Institute", 
+                    "name": "", 
                     "organization": "", 
                     "role": "Lab RA", 
                     "title": "", 
@@ -51,13 +51,13 @@
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "kumarsrijan@students.iiit.ac.in", 
+                        "email": "", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Kumar Srijan", 
+                    "institute": "Dayalbagh Educational Institute", 
+                    "name": "", 
                     "organization": "", 
                     "role": "Lab RA", 
                     "title": "", 
@@ -66,13 +66,13 @@
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "jayaguru.pandaug08@students.iiit.ac.in", 
+                        "email": "", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Jay Panda", 
+                    "institute": "Dayalbagh Educational Institute", 
+                    "name": "", 
                     "organization": "", 
                     "role": "Lab RA", 
                     "title": "", 
@@ -81,13 +81,13 @@
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "shashank.sharmaug08@students.iiit.ac.in", 
+                        "email": "", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Shashank Sharma", 
+                    "institute": "Dayalbagh Educational Institute", 
+                    "name": "", 
                     "organization": "", 
                     "role": "Lab RA", 
                     "title": "", 
@@ -95,11 +95,11 @@
                 }
             ], 
             "discipline": [
-                "Computer Science & Engineering"
+                "University Science and Instrumentation Centre"
             ], 
             "id": "cse02", 
             "integration_level": 5, 
-            "name": "Computer Programming", 
+            "name": "analytical and virtual instrumentation lab", 
             "server-side": true, 
             "status": "Released", 
             "type": ""
@@ -109,7 +109,7 @@
                 "arch": "i386", 
                 "hosting": "dedicated", 
                 "installer": ["sudo apt-get update",
-                "sudo apt-get install -y php5 apache2"], 
+                "sudo apt-get install -y iis-server sql-server"], 
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 
