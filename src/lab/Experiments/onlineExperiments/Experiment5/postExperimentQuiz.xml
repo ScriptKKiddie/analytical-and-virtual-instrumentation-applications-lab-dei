@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question>What are the redox potential of Cd, Pd and Cu peaks respectively in the given voltammogram?</question>
+    <answer>-0.4,0.9 and  1V </answer>
+    <answer correct="yes"> 0.8,-0.4 and 0 .0V</answer>
+    <answer>0.5,0.8,-0.9V </answer>
+    <answer>0.3,-0.7 and 2V</answer>
+  </mchoice>
+  <mchoice>
+    <question>What is the current range upto which the potentiostat can measure? </question>
+    <answer correct="yes"> pA	 </answer>
+    <answer>mA </answer>
+    <answer>µA</answer>
+    <answer>nA </answer>
+  </mchoice>
+  <mchoice>
+    <question>What is the standard potential of reference electrode relative to the Normal Hydrogen Electrode at 25ᵒC?</question>
+   <answer correct="yes">0.23V</answer>
+    <answer>0.6V </answer>
+    <answer>-0.4V</answer>
+    <answer>-0.9V</answer>
+  </mchoice>
+  <mchoice>
+    <question>Role of counter electrode in the three electrode system?</question>
+    <answer>Act as quasi-electrode</answer>
+    <answer correct="yes">Balance WE current</answer>
+    <answer>Provide potential </answer>
+    <answer>None of the above</answer>
+  </mchoice>
+  <mchoice>
+    <question>If the doping agent be Nitrogen, then the type of conductivity the BDD electrode shows? </question>
+    <answer>p-type </answer>
+    <answer>Both a and b </answer>
+    <answer correct="yes">n-type</answer>
+    <answer>None of these </answer>
+  </mchoice> 
+</quiz>

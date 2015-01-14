@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 10 question quiz about Australian Geography -->
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
+  <mchoice>
+    <question>Common materials used for working electrodes includes glassy carbon and platinum, and __________ </question>   
+    <answer>Silver</answer>
+    <answer>Tin</answer>
+    <answer correct="yes">Gold</answer>
+    <answer>Cadmium</answer>
+  </mchoice>
+  <mchoice>
+    <question>The reversible couple display a ratio of the peak currents passed at reduction (Ipc) and at oxidation (Ipa) (Ipa/Ipc)</question>
+    <answer>> 1</answer>
+    <answer>≥1</answer>
+    <answer correct="yes">= 1</answer>
+    <answer>≠1</answer>
+  </mchoice>
+  <mchoice>
+    <question><![CDATA[ >Ip = (2.69×10<sup>5</sup> ) n<sup>3/2</sup> ACD<sup>1/2</sup> v<sup>1/2</sup>]]></question>
+   <answer correct="yes">Randles – Sevcik Equation</answer>
+    <answer>Nernst Equation</answer>
+    <answer>Faraday Equation</answer>
+    <answer>Gibbs Equation</answer>
+  </mchoice>
+  <mchoice>
+    <question>If ∆Ep = 59 mV , the process is </question>
+    <answer correct="yes">One electron process</answer>
+    <answer>Two electron process</answer>
+    <answer>Three electron process</answer>
+    <answer>Four electron process</answer>
+  </mchoice>
+  <mchoice>
+    <question>If the standard potentials for the couple A+/A, B+/B, C+/C are +2.0, +1.0 and -0.5V respectively, which are the strongest reducing agent?</question>
+    <answer correct="yes">C</answer>
+    <answer>B+</answer>
+    <answer>A+</answer>
+    <answer>C+</answer>
+  </mchoice> 
+</quiz>
