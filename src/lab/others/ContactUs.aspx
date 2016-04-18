@@ -26,7 +26,7 @@
            <li><a href="../Default.aspx" target="_self">Home</a></li>
             <li><a href="../Experiments/experiments.aspx" target="_self">Experiments</a></li>
             <li><a href="../loginschedule/login.aspx" target="_self">Login & Schedule</a></li>
-            <li><a href="../feedback/feedback.aspx" target="_self">Feedback</a></li>
+            <li><a href="../feedback/feedbacks.aspx" target="_self">Feedback</a></li>
             <li><a href="livecam.aspx" target="_self">Live View</a></li>
             <li><a href="equipments.aspx" target="_self">Equipments</a></li>
             <li><a href="faqs.aspx" target="_self">FAQs</a></li>
@@ -69,7 +69,7 @@
     </div>
     <div style="position: relative; margin: auto; width: 1024px; background-color: #0e8de0">
         <img src="../images/footer-curve.jpg" width="1024" height="31" alt="" /><div class="copyright">
-            Copyright &copy; 2010-2011</div>
+            Copyright &copy; 2009-2016</div>
         <br />
     </div>
     </form>

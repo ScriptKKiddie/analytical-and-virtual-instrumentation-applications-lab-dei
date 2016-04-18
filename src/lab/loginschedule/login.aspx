@@ -26,12 +26,13 @@
             <li><a href="../Default.aspx" target="_self">Home</a></li>
             <li><a href="../Experiments/experiments.aspx" target="_self">Experiments</a></li>
             <li><a href="#" target="_self">Login & Schedule</a></li>
-            <li><a href="../feedback/feedback.aspx" target="_self">Feedback</a></li>
+            <li><a href="../feedback/feedbacks.aspx" target="_self">Feedback</a></li>
             <li><a href="../others/livecam.aspx" target="_self">Live View</a></li>
             <li><a href="../others/equipments.aspx" target="_self">Equipments</a></li>
             <li><a href="../others/faqs.aspx" target="_self">FAQs</a></li>
             <li><a href="../others/people.aspx" target="_self">People</a></li>
-            <li><a href="../others/contactUs.aspx" target="_self">Contact Us</a></li>
+            <li><a href="../others/contactUs.aspx" target="_self">Contact Us</a></li>            
+            <li><a id="CreateNewExperiment" runat="server" onserverclick="CreateNewExperiment_Click">Create New experiment</a> </li>
             <li><a id="logOut" runat="server" onserverclick="logOut_Click">Log Out</a></li>
         </ul>
     </div>
@@ -97,7 +98,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center" colspan="2" style="font-size: 1.2em;">
-                                                <a href="Schedule.aspx">View Schedule</a> &nbsp;&nbsp; |&nbsp;&nbsp; <a href="forgotPassword.aspx">
+                                                <a href="viewSchedule.aspx">View Schedule</a> &nbsp;&nbsp; |&nbsp;&nbsp; <a href="forgotPassword.aspx">
                                                     Forgot Password</a>
                                             </td>
                                         </tr>
@@ -128,7 +129,7 @@
                     <TitleTextStyle BackColor="#507CD1" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
                 </asp:Login>
             </div>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LABConnectionString %>"
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:virtualabConnectionString %>"
                 SelectCommand="SELECT [password] FROM [loginTable] WHERE ([login_id] = @login_id)">
                 <SelectParameters>
                     <asp:Parameter Name="login_id" Type="String" />
@@ -138,7 +139,7 @@
     </div>
     <div style="position: relative; margin: auto; width: 1024px; background-color: #0e8de0">
         <img src="../images/footer-curve.jpg" width="1024" height="31" alt="" /><div class="copyright">
-            Copyright &copy; 2010-2011</div>
+            Copyright &copy; 2009-2016</div>
         <br />
     </div>
     </form>

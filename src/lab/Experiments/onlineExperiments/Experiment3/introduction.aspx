@@ -25,7 +25,7 @@
                 <li><a href="../../../Default.aspx" target="_self">Home</a></li>
                 <li><a href="../../../Experiments/experiments.aspx" target="_self">Experiments</a></li>
                 <li><a href="../../../loginschedule/login.aspx" target="_self">Login & Schedule</a></li>
-                <li><a href="../../../feedback/feedback.aspx" target="_self">Feedback</a></li>
+                <li><a href="../../../feedback/feedbacks.aspx" target="_self">Feedback</a></li>
                 <li><a href="../../../others/equipments.aspx" target="_self">Equipments</a></li>
                 <li><a href="../../../others/faqs.aspx" target="_self">FAQs</a></li>
                 <li><a href="../../../others/people.aspx" target="_self">People</a></li>
@@ -42,56 +42,61 @@
             <div id="contentBox" style="padding: 0px; padding-left: 50px; padding-right: 50px;">
                 <br />
                 <div id="ddtabs2" class="glowingtabs">
-                    <ul>
-                        <li><a href="#"><span>
+                     <ul>
+                        <li><a href="introduction.aspx"><span>
                             <center>
-                                <img src="../../../images/theory.jpg" border="0"><br />
+                                <img src="../../../images/theory.jpg" width="40px" border="0"><br />
                                 Introduction</center>
                         </span></a></li>
                         <li><a href="setup.aspx"><span>
                             <center>
-                                <img src="../../../images/setup.png" border="0"><br />
+                                <img src="../../../images/setup.png" width="40px" border="0"><br />
                                 Setup</center>
                         </span></a></li>
                         <li><a href="sample.aspx"><span>
                             <center>
-                                <img src="../../../images/sample.png" border="0"><br />
+                                <img src="../../../images/sample.png" width="40px" border="0"><br />
                                 Sample</center>
                         </span></a></li>
                         <li><a href="procedure.aspx"><span>
                             <center>
-                                <img src="../../../images/procedure.jpg" border="0"><br />
+                                <img src="../../../images/procedure.jpg" width="40px" border="0"><br />
                                 Procedure</center>
                         </span></a></li>
                         <li><a href="animate.aspx"><span>
                             <center>
-                                <img src="../../../images/sim.jpg" border="0"><br />
+                                <img src="../../../images/sim.jpg" width="40px" border="0"><br />
                                 Animate</center>
                         </span></a></li>
                         <li><a href="perform.aspx"><span>
                             <center>
-                                <img src="../../../images/eval.jpg" border="0"><br />
+                                <img src="../../../images/eval.jpg" width="40px" border="0"><br />
                                 Perform</center>
                         </span></a></li>
                         <li><a href="DataAnalysis.aspx"><span>
                             <center>
-                                <img src="../../../images/books.jpg" border="0"><br />
+                                <img src="../../../images/books.jpg" width="40px" border="0"><br />
                                 Data Analysis</center>
                         </span></a></li>
                         <li><a href="Quiz.aspx"><span>
                             <center>
-                                <img src="../../../images/quiz.png" border="0"><br />
+                                <img src="../../../images/quiz.png" width="40px" border="0"><br />
                                 Quiz</center>
                         </span></a></li>
                         <li><a href="video.aspx"><span>
                             <center>
-                                <img src="../../../images/video.jpg" border="0"><br />
+                                <img src="../../../images/books.jpg" width="40px" border="0"><br />
                                 Video</center>
                         </span></a></li>
                         <li><a href="livecam.aspx"><span>
                             <center>
-                                <img src="../../../images/liveCam.png" border="0"><br />
+                                <img src="../../../images/liveCam.png" width="40px" border="0"><br />
                                 Live View</center>
+                        </span></a></li>
+                         <li><a href="reference.aspx"><span>
+                            <center>
+                                <img src="../../../Images/reference.gif" width="40px" border="0"><br />
+                                References</center>
                         </span></a></li>
                     </ul>
                 </div>
@@ -135,7 +140,7 @@
     <div style="position: relative; margin: auto; width: 1024px; background-color: #0e8de0">
         <img src="../../../images/footer-curve.jpg" width="1024" height="31" alt=""><div
             class="copyright">
-            Copyright &copy; 2009-2010</div>
+            Copyright © 2009-2016</div>
         <br />
     </div>
     </form>

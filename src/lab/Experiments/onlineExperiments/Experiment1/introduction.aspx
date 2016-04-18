@@ -1,10 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="introduction.aspx.cs" Inherits="VirtualLab.Experiments.onlineExperiments.Experiment1.introduction" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
-     <title>Analytical & Virtual Instrumentation Applications Lab</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Analytical & Virtual Instrumentation Applications Lab</title>
     <link href="../../../css/default.css" rel="stylesheet" type="text/css" />
     <link href="../../../css/custom.css" rel="stylesheet" type="text/css" />
 
@@ -12,9 +11,25 @@
     </script>
 
     <link rel="stylesheet" type="text/css" href="../../../ddtabmenufiles/glowtabs.css" />
+    <link rel="SHORTCUT ICON" href="../../../Images/logo.ico">
 </head>
+<%--Google Analytics code--%>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35958729-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<%--Google Analytics code--%>
 <body bgcolor="#FFFFFF">
-<form id="form1" runat="server">
+    <form id="form1" runat="server">
     <div id="header_main">
         <img src="../../../Images/logo.jpg" align="right" style="padding-right: 20px" height="100px"
             width="120px" alt="logo" />
@@ -22,16 +37,20 @@
     <div id="no_print">
         <!-- start header -->
         <div id="header">
-            <ul id="menuTop">
+            
+            <ul id="menuTop" style="font-size: x-small; font-weight: 700;">
                 <li><a href="../../../Default.aspx" target="_self">Home</a></li>
                 <li><a href="../../../Experiments/experiments.aspx" target="_self">Experiments</a></li>
-                <li><a href="../../../loginschedule/login.aspx" target="_self">Login & Schedule</a></li>
-                <li><a href="../../../feedback/feedback.aspx" target="_self">Feedback</a></li>
+                <li><a href="../../../loginschedule/login.aspx" target="_self" id="loginschedule" runat="server">Login & Schedule</a></li>
+                <li><a href="../../../feedback/Feedbacks.aspx" target="_self">Feedback</a></li>
                 <li><a href="../../../others/equipments.aspx" target="_self">Equipments</a></li>
                 <li><a href="../../../others/faqs.aspx" target="_self">FAQs</a></li>
                 <li><a href="../../../others/people.aspx" target="_self">People</a></li>
                 <li><a href="../../../others/contactUs.aspx" target="_self">Contact Us</a></li>
                 <li><a id="logOut" runat="server" onserverclick="logOut_Click">Log Out</a></li>
+                <li><a href="../../../others/OnlineSupport.aspx" target="_self">Online Support</a></li>
+                <li><a id="logInMenuschedule" href="../../../loginschedule/Schedules.aspx" runat="server">Schedule</a></li>
+                <li><a id="logOutMenuschedule" href="../../../loginschedule/viewSchedule.aspx" runat="server">View Schedule</a></li>
             </ul>
         </div>
         <div style="position: relative; margin: auto; width: 1024px; background-color: #e3f2fc">
@@ -44,57 +63,65 @@
             margin: auto; width: 1024px; min-height: 400px;">
             <div id="contentBox" style="padding: 0px; padding-left: 50px; padding-right: 50px;">
                 <br />
+                <asp:Label ID="lblUserName" runat="server" Text="Welcome User" Font-Bold="true" Font-Names="verdana"
+                    Font-Size="X-Small" ForeColor="Green"></asp:Label>
+                <br />
                 <div id="ddtabs2" class="glowingtabs">
-                    <ul>
-                        <li><a href="#"><span>
+                     <ul>
+                        <li><a href="introduction.aspx"><span>
                             <center>
-                                <img src="../../../images/theory.jpg" border="0"><br />
+                                <img src="../../../images/theory.jpg" width="40px" border="0"><br />
                                 Introduction</center>
                         </span></a></li>
                         <li><a href="setup.aspx"><span>
                             <center>
-                                <img src="../../../images/setup.png" border="0"><br />
+                                <img src="../../../images/setup.png" width="40px" border="0"><br />
                                 Setup</center>
                         </span></a></li>
                         <li><a href="sample.aspx"><span>
                             <center>
-                                <img src="../../../images/sample.png" border="0"><br />
+                                <img src="../../../images/sample.png" width="40px" border="0"><br />
                                 Sample</center>
                         </span></a></li>
                         <li><a href="procedure.aspx"><span>
                             <center>
-                                <img src="../../../images/procedure.jpg" border="0"><br />
+                                <img src="../../../images/procedure.jpg" width="40px" border="0"><br />
                                 Procedure</center>
                         </span></a></li>
                         <li><a href="animate.aspx"><span>
                             <center>
-                                <img src="../../../images/sim.jpg" border="0"><br />
+                                <img src="../../../images/sim.jpg" width="40px" border="0"><br />
                                 Animate</center>
                         </span></a></li>
                         <li><a href="perform.aspx"><span>
                             <center>
-                                <img src="../../../images/eval.jpg" border="0"><br />
+                                <img src="../../../images/eval.jpg" width="40px" border="0"><br />
                                 Perform</center>
                         </span></a></li>
                         <li><a href="DataAnalysis.aspx"><span>
                             <center>
-                                <img src="../../../images/books.jpg" border="0"><br />
+                                <img src="../../../images/books.jpg" width="40px" border="0"><br />
                                 Data Analysis</center>
                         </span></a></li>
                         <li><a href="Quiz.aspx"><span>
                             <center>
-                                <img src="../../../images/quiz.png" border="0"><br />
+                                <img src="../../../images/quiz.png" width="40px" border="0"><br />
                                 Quiz</center>
                         </span></a></li>
                         <li><a href="video.aspx"><span>
                             <center>
-                                <img src="../../../images/video.jpg" border="0"><br />
+                                <img src="../../../images/books.jpg" width="40px" border="0"><br />
                                 Video</center>
                         </span></a></li>
                         <li><a href="livecam.aspx"><span>
                             <center>
-                                <img src="../../../images/liveCam.png" border="0"><br />
+                                <img src="../../../images/liveCam.png" width="40px" border="0"><br />
                                 Live View</center>
+                        </span></a></li>
+                         <li><a href="reference.aspx"><span>
+                            <center>
+                                <img src="../../../Images/reference.gif" width="40px" border="0"><br />
+                                References</center>
                         </span></a></li>
                     </ul>
                 </div>
@@ -106,41 +133,45 @@
                 </p>
                 <div class="entry" style="line-height: 22px; font-size: medium; padding: 0px 0px 10px 15px;">
                     <h1>
-                        Objective</h1><br />
+                        Objective</h1>
+                    <br />
                     <p>
-                        Introduction to electrochemical technique, Cyclic Voltammery, i.e., to study the
-                        ferri-ferrocyanide system by the Cyclic voltammetry.</p><br />
+                        Introduction to Electrochemical Technique-Cyclic Voltammetry of Ferricyanide
+                        System.</p>
+                    <br />
                     <h1>
-                        Introduction</h1><br />
+                        Introduction</h1>
+                    <br />
                     <p>
                         The goal of this experiment is to get familiar with:
                         <br />
-                        </p>
-                        <div style="padding-left:40px;">
-                        <ul type="a">
-                            <li>To test the potentiostat using a dummy cell.</li>
+                    </p>
+                    <div style="padding-left: 40px;">
+                        <ul type="">
                             <li>Using a modern electrochemical potentiostat to observe the reduction- oxidation
                                 of iron (III) to iron (II) and vice versa under the given potential range.</li>
-                            <li>To measure the diffusion coefficient for iron (III).</li>
-                        </ul>
-                        </div><br />
-                        <p>
-                        
+                            
+                            </ul>
+                    </div>
+                    <br />
+                    <p>
                         It illustrates the effect of concentration and sweep rate on the current measured
-                        in a cyclic voltammetry.</p><br />
-                    
+                        in a cyclic voltammetry.</p>
+                    <br />
                     <br />
                     <h1>
-                        Theory</h1><br /><br />
-                   <p>
-                        Cyclic voltammetry is the most widely used technique for acquiring qualitative information
-                        about electrochemical reactions. The power of cyclic voltammetry results from its
-                        ability to rapidly provide considerable information on the thermodynamics of redox
-                        processes and the kinetics of heterogeneous electron-transfer reactions and on coupled
-                        chemical reactions or adsorption processes. Cyclic voltammetry is often the first
-                        experiment performed in an electroanalytical study. In particular, it offers a rapid
-                        location of redox potentials of the electroactive species and convenient evaluation
-                        of the effect of media upon the redox process.
+                        Theory</h1>
+                    <br />
+                    <br />
+                    <p>
+                        The Cyclic voltammetry is the most widely used technique for acquiring qualitative
+                        information about electrochemical reactions. The power of cyclic voltammetry results
+                        from its ability to rapidly provide considerable information on the thermodynamics
+                        of redox processes and the kinetics of heterogeneous electron-transfer reactions
+                        and on the coupled chemical reactions or adsorption processes. The Cyclic voltammetry
+                        is often the first experiment performed in an electroanalytical study. In particular,
+                        it offers a rapid location of redox potentials of the electroactive species and
+                        convenient evaluation of the effect of the media upon the redox process.
                     </p>
                     <br />
                     <p>
@@ -163,41 +194,52 @@
                         <br />
                         <br />
                         <img id="Img1" alt="Graph" src="Images/Graph.jpg" runat="server" />
-                    </p><br />
+                    </p>
+                    <br />
                     <p>
                         Epc= Peak cathodic potential; Ipc= Peak cathodic current; Epa= Peak anodic potential;
-                        Ipa=Peak anodic current</p><br />
+                        Ipa=Peak anodic current</p>
+                    <br />
                     <p>
                         The peak potential of the anodic sweep, Epa and the peak potential for cathodic
                         peak, Epc, can be directly read from the program, and the difference between them,
                         ∆Epeak, can be calculated. If redox couple is reversible, then the relationship,
-                    </p><br />
+                    </p>
+                    <br />
                     <p align="center">
                         <b>n ∆ Epeak= 59mV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1.1)</b>
-                    </p><br />
+                    </p>
+                    <br />
                     <p>
                         In addition, the ratio of the anodic peak current to the cathodic peak current is
                         given by:
-                    </p><br />
+                    </p>
+                    <br />
                     <p align="center">
                         <b>ipa / ipc = 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1.2)</b>
-                    </p><br />
+                    </p>
+                    <br />
                     <p>
-                        The formal potential E<sub>o</sub>, for a reversible redox couple is easily determined as the
-                        average of the two peak potentials as follows.</p><br />
+                        The formal potential E<sub>o</sub>, for a reversible redox couple is easily determined
+                        as the average of the two peak potentials as follows.</p>
+                    <br />
                     <p align="center">
                         <b>E<sub>o</sub>=(Epa+Epc) / 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1.3)</b>
-                    </p><br />
+                    </p>
+                    <br />
                     <p>
                         Quantitative information regarding analyte concentration can be obtained from the
                         voltammogram using Randles- Sevcik equation. This equation specifies the peak current,
-                        ip (anodic and cathodic), in terms of analyte concentration ,C.</p><br />
+                        ip (anodic and cathodic), in terms of analyte concentration ,C.</p>
+                    <br />
                     <p align="center">
                         <b>ip= 0.4463 n FAC (n F v D/ R T)<sup>1/2</sup> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1.4)</b>
-                    </p><br />
+                    </p>
+                    <br />
                     <p>
                         where, n=no. of electrons appearing in the half-reaction for the redox couple v=rate
-                        at which potential is swept</p><br />
+                        at which potential is swept</p>
+                    <br />
                     <p align="center">
                         F=Faradays constant (96485 C/mol),<br />
                         A=electrode area (cm<sup>2</sup>)<br />
@@ -206,17 +248,22 @@
                         D= analyte’s diffusion coefficient (cm<sup>2</sup>/sec)
                     </p>
                     <p>
-                        If temperature is assumed to be 25<sup>0</sup>C (298.15 K), the eqn. can be written as:
-                    </p><br />
+                        If temperature is assumed to be 25<sup>0</sup>C (298.15 K), the eqn. can be written
+                        as:
+                    </p>
+                    <br />
                     <p align="center">
                         <b>Ip = (2.687 x 10<sup>5</sup>) n<sup>3/2</sup> v<sup>1/2</sup> D<sup>1/2</sup> A C</b>
-                    </p><br />
+                    </p>
+                    <br />
                     <p>
                         where the constant is understood to have units (i.e., 2.687 x 10<sup>5</sup> C mol<sup>-1</sup>
-                        V<sup>-1/2</sup>).</p><br />
+                        V<sup>-1/2</sup>).</p>
+                    <br />
                     <p>
                         During the forward scan the Fe(III) get reduced as :
-                    </p><br />
+                    </p>
+                    <br />
                     <table align="center">
                         <tr>
                             <td>
@@ -229,28 +276,33 @@
                                 Fe(II)
                             </td>
                         </tr>
-                    </table><br />
+                    </table>
+                    <br />
                     <p>
                         Similarly during the reverse potential the oxidation of the Fe (II) takes place
-                        to (III) which can be shown as:
-                    </p><br />
+                        to&nbsp; Fe(III) which can be shown as:
+                    </p>
+                    <br />
                     <table align="center">
                         <tr>
                             <td>
-                                Fe (III) <sup>-</sup>
+                                Fe (II)&nbsp;
                             </td>
                             <td>
                                 <img alt="reduction" src="Images/oxidation.JPG" />
                             </td>
                             <td>
-                                Fe(II) + e<sup>-</sup>
+                                Fe(III) + e<sup>-</sup>
                             </td>
                         </tr>
-                    </table><br />
+                    </table>
+                    <br />
                     <p>
                         The redox reaction therefore can be used as an indication of major analytical tool
-                        for the determination of trace elements which are electro active in nature.
+                        for the determination of the trace elements which are electro active in nature.
                     </p>
+                    <br />
+                    
                 </div>
                 <br />
                 <br />
@@ -260,7 +312,7 @@
     <div style="position: relative; margin: auto; width: 1024px; background-color: #0e8de0">
         <img src="../../../images/footer-curve.jpg" width="1024" height="31" alt=""><div
             class="copyright">
-            Copyright &copy; 2009-2010</div>
+            Copyright © 2009-2016</div>
         <br />
     </div>
     </form>

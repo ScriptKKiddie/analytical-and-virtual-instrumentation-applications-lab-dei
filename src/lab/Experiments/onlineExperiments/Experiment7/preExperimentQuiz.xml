@@ -2,38 +2,38 @@
 <!-- 10 question quiz about Australian Geography -->
 <quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quiz.xsd">
   <mchoice>
-    <question>Which electrode is used for the following experiment</question>
-    <answer correct="yes">Prussian blue screen printed electrode</answer>
-    <answer>Ferrocyanide screen printed electrode</answer>
-    <answer>Co-Pthalocyanide screen printed electrode</answer>
-    <answer>CNT-SPE</answer>
+    <question>What is the use of MUX module?</question>
+    <answer>For the analysis of a voltammogram</answer>
+    <answer>A mathematical function for interpretation purpose</answer>
+    <answer correct="yes">For the comparison of different electrodes and solutions at a time.</answer>
+    <answer>None of the above</answer>
   </mchoice>
   <mchoice>
-    <question><![CDATA[>H<sub>2</sub>O<sub>2</sub> forms OH radical in the presence of]]></question>
-    <answer correct="yes">Fe – Cu</answer>
-    <answer>Mg - G</answer>
-    <answer><![CDATA[  Br<sub>2</sub> - Cl<sub>2</sub>]]></answer>
-    <answer>P - S</answer>
+    <question>How many systems (max.) can be connected via MUX?</question>
+    <answer>2</answer>
+    <answer>3</answer>
+    <answer correct="yes">4</answer>
+    <answer>5</answer>    
   </mchoice>
   <mchoice>
-    <question>What is the chemical formula of prussion blue</question>
-    <answer><![CDATA[ Fe[Fe<sub>3</sub>(CN)<sub>6</sub>]<sub>3</sub>.n H<sub>2</sub>O]]></answer>
-    <answer correct="yes"><![CDATA[ Fe<sub>4</sub>[Fe(CN)<sub>6</sub>]<sub>3</sub>.n H<sub>2</sub>O]]></answer>
-    <answer><![CDATA[ Fe[Fe(CN)<sub>6</sub>].n H<sub>2</sub>O]]></answer>
-    <answer><![CDATA[ [Fe<sub>4</sub>(CN)<sub>6</sub>]<sub>3</sub>]]></answer>
+    <question>What is the advantage of using the MUX module?</question>
+    <answer>It increases the accuracy and precision.</answer>
+    <answer correct="yes">It saves time and switches the system automatically.</answer>
+    <answer>It helps in determining the kinetics of the reaction.</answer>
+    <answer>All of the above.</answer>
   </mchoice>
   <mchoice>
-    <question>Which is the oxidized form of Prussian blue </question>
-    <answer correct="yes">Prussian green</answer>
-    <answer>Prussian White</answer>
-    <answer>Ferricyanide</answer>
-    <answer>Ferrocyanide</answer>
+    <question>Can simultaneous run of the electrochemical systems be possible via MUX?</question>
+    <answer>Yes</answer>
+    <answer correct="yes">No</answer>
+    <answer>Can't be said</answer>
+    <answer>Depend on systems.</answer>
   </mchoice>
   <mchoice>
-    <question>What is the full form of POSCO</question>
-    <answer>Provisional</answer>
-    <answer correct="yes">Poyang</answer>
-    <answer>Payrol</answer>
-    <answer>Payment</answer>
+    <question>Which of the following is right?</question>
+    <answer>Mux is an accessory of Autolab to increase sensitivity.</answer>
+    <answer>Mux is an accessory of Autolab to increase the working current range.</answer>
+    <answer correct="yes">Mux is used to study different electrochemical systems one after the other automatically.</answer>
+    <answer>All are correct.</answer>
   </mchoice>
 </quiz>

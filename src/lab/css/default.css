@@ -1,4 +1,8 @@
-*{margin:0;padding:0;}
+*{padding:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
 
 
 h1, h2, h3 {
@@ -529,8 +533,10 @@ padding: 0px 10px;
 	}
 #menuTop li {
 	float: left;
-	margin: 0;
 	padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 #menuTop a {
 	background: url("../images/seperator.gif") bottom right no-repeat;

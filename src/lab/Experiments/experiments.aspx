@@ -30,7 +30,21 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="../ddtabmenufiles/glowtabs.css" />
+<link rel="SHORTCUT ICON" href="../images/logo.ico">
 </head>
+<%--Google Analytics code--%>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35958729-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<%--Google Analytics code--%>
 <body id="Body1" bgcolor="#FFFFFF" runat="server">
     <form id="form1" runat="server">
     <div id="header_main">
@@ -40,17 +54,20 @@
     <!-- <div id="no_print"
          start header -->
     <div id="header">
-        <ul id="menuTop">
+         <ul id="menuTop" style="font-size: x-small; font-weight: 700;">
             <li><a href="../Default.aspx" target="_self">Home</a></li>
             <li><a href="#" target="_self">Experiments</a></li>
-            <li><a href="../loginschedule/login.aspx" target="_self">Login & Schedule</a></li>
-            <li><a href="../feedback/feedback.aspx" target="_self">Feedback</a></li>
+            <li><a href="../loginschedule/login.aspx" target="_self" id="loginschedule" runat="server">Login & Schedule</a></li>
+            <li><a href="../feedback/feedbacks.aspx" target="_self">Feedback</a></li>
             <li><a href="../others/livecam.aspx" target="_self">Live View</a></li>
             <li><a href="../others/equipments.aspx" target="_self">Equipments</a></li>
             <li><a href="../others/faqs.aspx" target="_self">FAQs</a></li>
             <li><a href="../others/people.aspx" target="_self">People</a></li>
             <li><a href="../others/contactUs.aspx" target="_self">Contact Us</a></li>
             <li><a id="logOut" runat="server" onserverclick="logOut_Click">Log Out</a></li>
+            <li><a id="onLineSupport" href="~/others/OnlineSupport.aspx" runat="server">Online Support</a></li>
+            <li><a id="logMenuschedule" href="../loginschedule/Schedules.aspx" runat="server">Schedule</a></li>
+            <li><a id="logOutMenuschedule" href="../loginschedule/viewSchedule.aspx" runat="server">View Schedule</a></li>
         </ul>
     </div>
     <div style="position: relative; margin: auto; width: 1024px; background-color: #e3f2fc">
@@ -64,21 +81,27 @@
     <div style="background-image: url(../images/content_bg.jpg); position: relative;
         margin: auto; width: 1024px; min-height: 400px;">
         <div id="contentBox" style="padding: 0px; padding-left: 50px; padding-right: 50px;">
+        <br />
+        <asp:Label ID="lblUserName" runat="server" Text="Welcome User" Font-Bold="true" Font-Names="verdana" Font-Size="X-Small" ForeColor="Green"></asp:Label>
             <br />
-            <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" CssClass="MyTabStyle">
+            <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" 
+                CssClass="MyTabStyle">
                 <cc1:TabPanel runat="server" ID="TabPanel1">
                     <HeaderTemplate>
                         <div id="div2" class="glowingtabs">
                             <ul>
-                                <li><a href="#"><span style="text-align: center;">
+                                <li><a href="#">
+                                    <span style="text-align: center;">
                                     <img src="../Images/procedure.jpg" border="0" alt="Online Experiments" />
                                     Online Experiments </span></a></li>
                             </ul>
                         </div>
-                    </HeaderTemplate>
-                    <ContentTemplate>
+                    
+</HeaderTemplate>
+                    
+<ContentTemplate>
                         <div>
-                            <p>
+                            <p style="font-family:Verdana; font-size:x-small;">
                                 Online Experiments are real experiments which can be executed through the internet.
                                 A user at a location A is allowed to conduct an experiment at a distant location
                                 B via his or her computer through Internet. Controlling the experiment is enabled
@@ -86,7 +109,7 @@
                             <center>
                                 <img src="../Images/setup.jpg" alt="Lab Setup" height="350" width="650" /></center>
                             <br />
-                            <p>
+                            <p style="font-family:Verdana; font-size:x-small;">
                                 The figure above explain the setup of our Lab at <strong>University Science &amp; Instrumentation
                                     Center (USIC) </strong>at Dayalbagh Educational Institute, Agra<br />
                                 In this section those softwares are hosted online which control a particular analytical
@@ -95,39 +118,60 @@
                                 minimal client side program on their pc&#39;s and then directly connect to our server
                                 to make use of these apps.</p>
                             <br />
-                            <h3 style="color: #000000">
+                            <h3 style="color: #000000; font-family:Verdana; font-size:small;">
                                 List of Experiments</h3>
-                            <br />
+                            
                             <ul type="1">
-                                <li style="line-height: 40px;">
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
                                     <asp:HyperLink ID="exp1" NavigateUrl="onlineExperiments/Experiment1/introduction.aspx"
-                                        runat="server" Text="Introduction to Electrochemical Technique, Cyclic Voltammetry."
-                                        Font-Bold="True"></asp:HyperLink></li>
-                                <li style="line-height: 40px;">
+                                        runat="server" Text="Introduction to Electrochemical Technique-Cyclic Voltammetry of Ferricyanide System."
+                                        Font-Bold="True"></asp:HyperLink>
+</li>
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
                                     <asp:HyperLink ID="exp2" NavigateUrl="onlineExperiments/Experiment2/introduction.aspx"
-                                        runat="server" Text="Differential Pulse Anodic Stripping Voltammetry." 
-                                        Font-Bold="True"></asp:HyperLink></li>
-                                <li style="line-height: 40px;">
+                                        runat="server" Text="Determination of Heavy Metals in Yamuna River Water by Differential Pulse Anodic Stripping Voltammetry." 
+                                        Font-Bold="True"></asp:HyperLink>
+</li>
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
                                     <asp:HyperLink ID="exp3" NavigateUrl="onlineExperiments/Experiment3/introduction.aspx"
                                         runat="server" Text="Study of Electrochemical behaviour of Ascorbic Acid by CNT Electrode."
-                                        Font-Bold="True"></asp:HyperLink></li>
-                                <li style="line-height: 40px;">
+                                        Font-Bold="True"></asp:HyperLink>
+</li>
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
                                     <asp:HyperLink ID="exp4" NavigateUrl="onlineExperiments/Experiment4/introduction.aspx"
                                         runat="server" Text="Electrochemical Study of Acetaminophen in Paracetamol Tablet."
-                                        Font-Bold="True"></asp:HyperLink></li>
-                                <li style="line-height: 40px;">
+                                        Font-Bold="True"></asp:HyperLink>
+</li>
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
                                     <asp:HyperLink ID="exp5" NavigateUrl="onlineExperiments/Experiment5/introduction.aspx"
                                         runat="server" Text="Simultaneous Determination Of Heavy Metals In Water Samples Using Boron Doped Diamond Electrode." 
-                                        Font-Bold="True"></asp:HyperLink></li>
-                                <li style="line-height: 40px;">
+                                        Font-Bold="True"></asp:HyperLink>
+</li>
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
                                     <asp:HyperLink ID="exp6" NavigateUrl="onlineExperiments/Experiment6/introduction.aspx"
                                         runat="server" Text="Electrochemical study of ferri/ferro system with MUX MULTI4 Module."
-                                        Font-Bold="True"></asp:HyperLink></li>
+                                        Font-Bold="True"></asp:HyperLink>
+</li>
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
+                                    <asp:HyperLink ID="HyperLink1" NavigateUrl="onlineExperiments/Experiment7/introduction.aspx"
+                                        runat="server" Text="Measurement of electrode impedance by Electrochemical Impedance Spectroscopy."
+                                        Font-Bold="True"></asp:HyperLink>
+</li>
+                                <li style="line-height: 40px; font-family:Verdana; font-size:x-small;">
+                                    <asp:HyperLink ID="HyperLink2" NavigateUrl="onlineExperiments/Experiment8/introduction.aspx"
+                                        runat="server" Text="Fabrication of Plant modified Electrodes."
+                                        Font-Bold="True"></asp:HyperLink>
+
+                                        <b><span id="abc" runat="server" style="font-size:x-small; font-family:Verdana;">(Not experimental)</span>
+ </b>
+                                        </li>
                             </ul>                           
                         </div>
                         <br />
-                    </ContentTemplate>
-                </cc1:TabPanel>
+                    
+</ContentTemplate>
+                
+</cc1:TabPanel>
                 <cc1:TabPanel runat="server" ID="TabPanel2">
                     <HeaderTemplate>
                         <div id="div1" class="glowingtabs">
@@ -137,21 +181,23 @@
                                     Animations & Simulations </span></a></li>
                             </ul>
                         </div>
-                    </HeaderTemplate>
-                    <ContentTemplate>
+                    
+</HeaderTemplate>
+                    
+<ContentTemplate>
                         <div>
-                            <p>
+                             <p style="font-family:Verdana; font-size:x-small;">
                                 Simulation is the imitation of some real thing, state of affairs, or process. The
                                 act of simulating something generally entails representing certain key characteristics
                                 or behaviours of a selected physical or abstract system.</p>
-                            <p>
+                             <p style="font-family:Verdana; font-size:x-small;">
                                 In this section we have added simulations for already performed experiments which
                                 users can view to have a basic idea on how experiments show their ouput. For various
                                 experiments like Cyclic Voltammetry, colorimeter etc, how the output is observed,
                                 can be easily viewed in this section.</p>
                         </div>
                         <br />
-                        <h3 style="color: #000000">
+                        <h3 style="color: #000000; font-family:Verdana; font-size:small;">
                             Various Simulations & Animations</h3>
                         <br />
                         <cc1:Accordion ID="Accordion1" runat="server" SelectedIndex="0" FadeTransitions="true"
@@ -165,12 +211,12 @@
                                     <Content>
                                         <br />
                                         <div style="padding-bottom: 20px; font-size: medium; line-height: 22px;">
-                                            <p>
+                                            <p style="font-family:Verdana; font-size:x-small;">
                                                 Simulation of Cyclic Voltammetry discribe the exprimental setup using Pine PotentioStat</p>
                                             <center>
                                                 <img src="SimulationData/Images/CVGraph.JPG" height="270px" alt="Cyclic Voltammetry Graph" /></center>
                                             <br />
-                                            <p>
+                                            <p style="font-family:Verdana; font-size:x-small;">
                                                 Figure above illustrates the expected response of a reversible redox couple during
                                                 a single potential cycle. Here it is assumed that only the oxidized form O is present
                                                 initially. Thus, a negative-going potential scan is chosen for the first half cycle,
@@ -193,13 +239,13 @@
                                     <Content>
                                         <br />
                                         <div style="padding-bottom: 20px; font-size: medium; line-height: 22px;">
-                                            <p>
+                                            <p style="font-family:Verdana; font-size:x-small;">
                                                 Simulation of <b>Polorography </b>discribe the experimental setup with our the Instrument
                                                 at Lab</p>
                                             <center>
                                                 <img src="SimulationData/Images/polograph.jpg" height="270px" alt="Polorographic Curve" /></center>
                                             <br />
-                                            <p>
+                                            <p style="font-family:Verdana; font-size:x-small;">
                                                 Simple principle of polarography is the study of solutions or of electrode processes
                                                 by means of electrolysis with two electrodes, one polarizable and one unpolarizable,
                                                 the former formed by mercury regularly dropping from a capillary tube. An objective
@@ -223,8 +269,10 @@
                                 </cc1:AccordionPane>
                             </Panes>
                         </cc1:Accordion>
-                    </ContentTemplate>
-                </cc1:TabPanel>
+                    
+</ContentTemplate>
+                
+</cc1:TabPanel>
             </cc1:TabContainer>
             <h1 class="title">
                 <a href="#"></a>
@@ -234,13 +282,13 @@
             </p>
             <div class="entry">
             </div>
-            <br />
-            <br />
+            
+            
         </div>
     </div>
     <div style="position: relative; margin: auto; width: 1024px; background-color: #0e8de0">
         <img src="../images/footer-curve.jpg" width="1024" height="31" alt="" /><div class="copyright">
-            Copyright &copy; 2010-2011</div>
+            Copyright &copy; 2009-2016</div>
         <br />
     </div>
     </form>

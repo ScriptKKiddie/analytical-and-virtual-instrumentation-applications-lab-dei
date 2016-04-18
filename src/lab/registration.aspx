@@ -49,7 +49,7 @@
   
     <div style="position: relative; margin: auto; width: 1024px; background-color: #0e8de0">
         <img src="../images/footer-curve.jpg" width="1024" height="31" alt="" /><div class="copyright">
-            Copyright &copy; 2010-2011</div>
+            Copyright &copy; 2009-2016</div>
         <br />
     </div>
     </form>

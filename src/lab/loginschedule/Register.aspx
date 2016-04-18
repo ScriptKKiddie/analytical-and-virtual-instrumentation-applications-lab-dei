@@ -74,7 +74,7 @@
             <li><a href="../Default.aspx" target="_self">Home</a></li>
             <li><a href="../Experiments/experiments.aspx" target="_self">Experiments</a></li>
             <li><a href="login.aspx" target="_self">Login & Schedule</a></li>
-            <li><a href="../feedback/feedback.aspx" target="_self">Feedback</a></li>
+            <li><a href="../feedback/feedbacks.aspx" target="_self">Feedback</a></li>
             <li><a href="../others/livecam.aspx" target="_self">Live View</a></li>
             <li><a href="../others/equipments.aspx" target="_self">Equipments</a></li>
             <li><a href="../others/faqs.aspx" target="_self">FAQs</a></li>
@@ -128,7 +128,7 @@
                                                                     <strong>Name : <font color="red">*</font> </strong>
                                                                 </td>
                                                                 <td>
-                                                                    <asp:TextBox ID="nameTB" runat="server"></asp:TextBox>
+                                                                    <asp:TextBox ID="nameTB" runat="server" Width="150px"></asp:TextBox>
                                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="nameTB"
                                                                         Display="None" ErrorMessage="Name is required"></asp:RequiredFieldValidator>
                                                                     <cc1:ValidatorCalloutExtender ID="RequiredFieldValidator1_ValidatorCalloutExtender"
@@ -145,10 +145,13 @@
                                                                 <td class="test">
                                                                     <strong>Username : <font color="red">*</font> </strong>
                                                                 </td>
-                                                                <td>
+                                                                <td align="left">
+                                                                    
                                                                     <asp:UpdatePanel runat="server" ID="up1">
                                                                         <ContentTemplate>
-                                                                            <asp:TextBox runat="server" ID="userNameTB" onblur="checkusername(this.value);" />
+                                                                         
+                                                                         <%--<asp:TextBox ID="userNameTB" runat="server"></asp:TextBox>--%>
+                                                                            <asp:TextBox runat="server" Width="150px" ID="userNameTB" onblur="checkusername(this.value);" />
                                                                             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="userNameTB"
                                                                                 Display="None" ErrorMessage="Username is required"></asp:RequiredFieldValidator>
@@ -169,7 +172,7 @@
                                                                     <strong>Password : <font color="red">*</font> </strong>
                                                                 </td>
                                                                 <td>
-                                                                    <asp:TextBox ID="passwordTB" runat="server" TextMode="Password"></asp:TextBox>
+                                                                    <asp:TextBox ID="passwordTB" runat="server" TextMode="Password" Width="150px"></asp:TextBox>
                                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="passwordTB"
                                                                         Display="None" ErrorMessage="Password is required"></asp:RequiredFieldValidator>
                                                                     <cc1:ValidatorCalloutExtender ID="RequiredFieldValidator3_ValidatorCalloutExtender"
@@ -186,8 +189,8 @@
                                                                 <td class="test">
                                                                     <strong>Confirm Password : <font color="red">*</font> </strong>
                                                                 </td>
-                                                                <td>
-                                                                    <asp:TextBox ID="confrmTB" runat="server" TextMode="Password" onblur="checkPassword(this.value);"></asp:TextBox>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="confrmTB" runat="server" TextMode="Password" Width="150px" onblur="checkPassword(this.value);"></asp:TextBox>
                                                                     <asp:Label ID="passwordError" runat="server" Text=""></asp:Label>
                                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="confrmTB"
                                                                         Display="None" ErrorMessage="Confirm password is required"></asp:RequiredFieldValidator>
@@ -206,7 +209,7 @@
                                                                     <asp:Label ID="Label2" runat="server" Font-Bold="true">Email Id : <font color="red">*</font></asp:Label>
                                                                 </td>
                                                                 <td>
-                                                                    <asp:TextBox ID="emailTB" runat="server"></asp:TextBox>
+                                                                    <asp:TextBox ID="emailTB" runat="server" Width="150px"></asp:TextBox>
                                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="emailTB"
                                                                         Display="None" ErrorMessage="Email Id is required"></asp:RequiredFieldValidator>
                                                                     <cc1:ValidatorCalloutExtender ID="RequiredFieldValidator5_ValidatorCalloutExtender"
@@ -223,8 +226,8 @@
                                                                 <td class="test">
                                                                     <asp:Label ID="Label3" runat="server" Text="Intitution :" Font-Bold="true"></asp:Label>
                                                                 </td>
-                                                                <td>
-                                                                    <asp:TextBox ID="instituteTB" runat="server"></asp:TextBox>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="instituteTB" runat="server" Width="150px"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -236,8 +239,8 @@
                                                                 <td class="test">
                                                                     <asp:Label ID="Label4" runat="server" Text="Designation :" Font-Bold="true"></asp:Label>
                                                                 </td>
-                                                                <td>
-                                                                    <asp:TextBox ID="desisnationTB" runat="server"></asp:TextBox>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="desisnationTB" runat="server" Width="150px"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -249,8 +252,8 @@
                                                                 <td class="test">
                                                                     <asp:Label ID="Label5" runat="server" Text="Mobile Number :" Font-Bold="true"></asp:Label>
                                                                 </td>
-                                                                <td>
-                                                                    <asp:TextBox ID="phNumberTB" runat="server"></asp:TextBox>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="phNumberTB" runat="server" Width="150px"></asp:TextBox>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -264,14 +267,22 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td>
-                                                                    &nbsp;
+                                                            <td align="center"">
+                                                                    <asp:Button ID="Button1" runat="server" Text="Register" 
+                                                                    OnClick="Button1_Click" ForeColor="Blue" width="100px" />
+                                                                </td><td align="left">
+                                                                    <asp:Button ID="btnclear" runat="server" Width="100px" Text="Clear" 
+                                                                        ForeColor="Blue" CausesValidation="False" onclick="btnclear_Click" />
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td>
+                                                                    &nbsp;
+                                                                    </td>
+                                                            </tr>
+                                                            <tr>
                                                                 <td style="text-align: center" colspan="2">
-                                                                    <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
-                                                                </td>
+                                                                    &nbsp;</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -282,7 +293,7 @@
                                     <br />
                                     <br />
                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" DataSourceMode="DataReader"
-                                        ConnectionString="<%$ ConnectionStrings:LABConnectionString %>" DeleteCommand="DELETE FROM [loginTable] WHERE [login_id] = @login_id"
+                                        ConnectionString="<%$ ConnectionStrings:virtualabConnectionString %>" DeleteCommand="DELETE FROM [loginTable] WHERE [login_id] = @login_id"
                                         InsertCommand="INSERT INTO [loginTable] ([login_id], [password], [name], [institution], [mailID], [designation], [phNumber]) VALUES (@login_id, @password, @name, @institution, @mailID, @designation, @phNumber)"
                                         SelectCommand="SELECT * FROM [loginTable]" UpdateCommand="UPDATE [loginTable] SET [password] = @password, [name] = @name, [institution] = @institution, [mailID] = @mailID, [designation] = @designation, [phNumber] = @phNumber WHERE [login_id] = @login_id">
                                         <DeleteParameters>
@@ -311,7 +322,7 @@
     </div>
     <div style="position: relative; margin: auto; width: 1024px; background-color: #0e8de0">
         <img src="../images/footer-curve.jpg" width="1024" height="31" alt="" /><div class="copyright">
-            Copyright &copy; 2010-2011</div>
+            Copyright &copy; 2009-2016</div>
         <br />
     </div>
     </form>
