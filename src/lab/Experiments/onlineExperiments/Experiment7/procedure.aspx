@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="procedure.aspx.cs" Inherits="VirtualLab.Experiments.onlineExperiments.Experiment7.procedure" %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -63,35 +62,60 @@
                 <br />
                 <div id="ddtabs2" class="glowingtabs">
                     <ul>
-                        <li><a href="Introduction.aspx"><span>
+                        <li><a href="introduction.aspx"><span>
                             <center>
-                                <img src="../../../images/theory.jpg" border="0"><br />
+                                <img src="../../../images/theory.jpg" width="40px" border="0"><br />
                                 Introduction</center>
                         </span></a></li>
-                        <li><a href="Setup.aspx"><span>
+                        <li><a href="setup.aspx"><span>
                             <center>
-                                <img src="../../../images/setup.png" border="0"><br />
+                                <img src="../../../images/setup.png" width="40px" border="0"><br />
                                 Setup</center>
                         </span></a></li>
-                        <li><a href="Procedure.aspx"><span>
+                        <li><a href="#"><span>
                             <center>
-                                <img src="../../../images/procedure.jpg" border="0"><br />
+                                <img src="../../../images/sample.png" width="40px" border="0"><br />
+                                Sample</center>
+                        </span></a></li>
+                        <li><a href="procedure.aspx"><span>
+                            <center>
+                                <img src="../../../images/procedure.jpg" width="40px" border="0"><br />
                                 Procedure</center>
+                        </span></a></li>
+                        <li><a href="#"><span>
+                            <center>
+                                <img src="../../../images/sim.jpg" width="40px" border="0"><br />
+                                Animate</center>
                         </span></a></li>
                         <li><a href="perform.aspx"><span>
                             <center>
-                                <img src="../../../images/eval.jpg" border="0"><br />
+                                <img src="../../../images/eval.jpg" width="40px" border="0"><br />
                                 Perform</center>
                         </span></a></li>
                         <li><a href="DataAnalysis.aspx"><span>
                             <center>
-                                <img src="../../../images/books.jpg" border="0"><br />
+                                <img src="../../../images/books.jpg" width="40px" border="0"><br />
                                 Data Analysis</center>
+                        </span></a></li>
+                        <li><a href="#"><span>
+                            <center>
+                                <img src="../../../images/quiz.png" width="40px" border="0"><br />
+                                Quiz</center>
+                        </span></a></li>
+                        <li><a href="video.aspx"><span>
+                            <center>
+                                <img src="../../../images/video.jpg" width="40px" border="0"><br />
+                                Video</center>
                         </span></a></li>
                         <li><a href="livecam.aspx"><span>
                             <center>
-                                <img src="../../../images/liveCam.png" border="0"><br />
+                                <img src="../../../images/liveCam.png" width="40px" border="0"><br />
                                 Live View</center>
+                        </span></a></li>
+                         <li><a href="reference.aspx"><span>
+                            <center>
+                                <img src="../../../Images/reference.gif" width="40px" border="0"><br />
+                                References</center>
                         </span></a></li>
                     </ul>
                 </div>

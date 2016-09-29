@@ -98,7 +98,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center" colspan="2" style="font-size: 1.2em;">
-                                                <a href="Schedule.aspx">View Schedule</a> &nbsp;&nbsp; |&nbsp;&nbsp; <a href="forgotPassword.aspx">
+                                                <a href="viewSchedule.aspx">View Schedule</a> &nbsp;&nbsp; |&nbsp;&nbsp; <a href="forgotPassword.aspx">
                                                     Forgot Password</a>
                                             </td>
                                         </tr>

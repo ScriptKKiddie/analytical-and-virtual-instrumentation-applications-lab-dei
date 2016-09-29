@@ -106,13 +106,13 @@
                         </tr>
                          <tr>
                             <td>
-                                Mr. Rehan Mohommad
+                                Mr. Dinesh Kumar Verma
                             </td>
                             <td>
                                 Software Engineer
                             </td>
                             <td>
-                                rehanready@gmail.com
+                                dinnu.agra2011@gmail.com
                             </td>
                         </tr>
                          <tr>

@@ -112,7 +112,7 @@
             </p>
             <br />
             <br />
-                                    <div class="entry" align="center">
+              <div class="entry" align="center">
                                         <input id="inpHide" type="hidden" value="false" runat="server" />
                                         <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
                                         </asp:ScriptManager>
@@ -351,7 +351,7 @@
                                     <br />
                                     <br />
                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" DataSourceMode="DataReader"
-                                        ConnectionString="<%$ ConnectionStrings:LABConnectionString %>"
+                                        ConnectionString="<%$ ConnectionStrings:virtualabConnectionString %>"
                                         SelectCommand="SELECT * FROM [CREATE_EXP]">
                                     </asp:SqlDataSource>
                                 </div>
